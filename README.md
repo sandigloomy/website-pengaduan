@@ -29,17 +29,16 @@
 
 Project ini dengan Routing sederhana php menggunakan directory root utama folder, membuat project ini memakan waktu yang cukup lama hehe.
 
-Kenapa saya membuatnya:
+Kenapa membuatnya:
 * Ujikom
 * Memperdalam php walau masih native :D
-* Untuk Portfolio saya :smile:
+* Untuk Portfolio :smile:
 
 Ini menggunakan template bootstrap , untuk mengubah tampilan lihat pada documentasi bootstrap yang tersedia.
 
 import sql `*.sql` untuk memulai.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -86,8 +85,20 @@ Untuk menggunakan
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-
+## Login 
+* masyarakat
+ ```php
+   username: sandi.us passwors: us
+ ```
+* admin
+ ```php
+   username: admin passwors: admin
+ ```
+* petugas
+ ```php
+   username: petugas passwors: petugas
+ ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
