@@ -55,7 +55,7 @@ import sql `*.sql` untuk memulai.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Untuk meenggunakan project ini!
+Untuk menggunakan project ini!
 
 ### Prerequisites
 
