@@ -36,7 +36,7 @@ Kenapa membuatnya:
 
 Ini menggunakan template bootstrap , untuk mengubah tampilan lihat pada documentasi bootstrap yang tersedia.
 
-import sql `*.sql` untuk memulai.
+import sql `  pengaduan_masyarakat.sql ` untuk memulai.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
