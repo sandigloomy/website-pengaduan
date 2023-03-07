@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/othneildrew/Best-README-Template/blob/master/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/svg/favicon.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Pengaduan Masyarakat</h3>
