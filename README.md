@@ -108,9 +108,9 @@ Untuk menggunakan
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/) - email@example.com
+Your Name - [@your_twitter](https://instagram.com/sandikrxyzn) - sandikrxyzn@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/your_username/repo_name](https://github.com/sandikrxyzn/project-pengaduan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
