@@ -27,14 +27,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Project ini dengan Routing sederhana php menggunakan directory root utama folder, membuat project ini memakan waktu yang cukup lama hehe.
+Webssite dengan Routing sederhana php menggunakan directory root utama folder.
 
 Kenapa membuatnya:
 * Ujikom
 * Memperdalam php walau masih native :D
 * Untuk Portfolio :smile:
 
-Ini menggunakan template bootstrap , untuk mengubah tampilan lihat pada documentasi bootstrap yang tersedia.
+Ini menggunakan template bootstrap , untuk mengubah tampilan lihat pada dokumentasi bootstrap yang tersedia.
 
 import sql `  pengaduan_masyarakat.sql ` untuk memulai.
 
@@ -54,14 +54,14 @@ import sql `  pengaduan_masyarakat.sql ` untuk memulai.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Untuk menggunakan project ini!
+Untuk menggunakan !
 
 ### Prerequisites
 
 Import File sql ke phpmyadmin
 * sql
   ```sh
-  *sql
+   .sql
   ```
 
 ### Installation
