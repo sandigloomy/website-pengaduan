@@ -190,4 +190,4 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[product-screenshot]: image/enam.png
+[product-screenshot]: images/enam.png
