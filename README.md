@@ -180,5 +180,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
+[JQuery.com]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+[JQuery-url]: https://jquery.com 
 
 [product-screenshot]: images/enam.png
