@@ -13,7 +13,7 @@
   <h3 align="center">Pengaduan Masyarakat</h3>
 
   <p align="center">
-    Project Pengaduan Masyarakat php native
+    Website Pengaduan Masyarakat php native
   </p>
 </div>
 
