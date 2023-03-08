@@ -27,7 +27,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Webssite dengan Routing sederhana php menggunakan directory root utama folder.
+Website dengan Routing sederhana php menggunakan directory root utama folder.
 
 Alasan membuatnya:
 * Ujikom :smile:
