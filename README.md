@@ -127,7 +127,7 @@ Project Link: [https://github.com/sandikrxyzn/project-pengaduan/](https://github
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Laravel.com]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
-[Laravel-url]: https://php.
+[Laravel-url]: https://php.net
 [JQuery.com]: https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white
 [JQuery-url]: https://mysql.com 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
