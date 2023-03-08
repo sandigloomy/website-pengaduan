@@ -29,10 +29,8 @@
 
 Webssite dengan Routing sederhana php menggunakan directory root utama folder.
 
-Kenapa membuatnya:
-* Ujikom
-* Memperdalam php walau masih native :D
-* Untuk Portfolio :smile:
+Alasan membuatnya:
+* Ujikom :smile:
 
 Ini menggunakan template bootstrap , untuk mengubah tampilan lihat pada dokumentasi bootstrap yang tersedia.
 
@@ -58,17 +56,17 @@ Untuk menggunakan !
 
 ### Prerequisites
 
-Import File sql ke phpmyadmin
+Buat database atau import.
 * sql
   ```sh
-   .sql
+   pengaduan_masyarakatt
   ```
 
 ### Installation
 
-Untuk menggunakan
+Untuk memulai
 
-1. Terminal / download zip
+1. Apache, mysql
 2. Clone the repo
    ```sh
    git clone https://github.com/sandikrxyzn/project-pengaduan.git
@@ -108,9 +106,9 @@ Untuk menggunakan
 - [x] Verifikasi
 - [x] Masyarakat melilihat pengaduan yang di kirimkan 
 - [x] admin
-    - [ ] table akun -> delete -> add
-    - [ ] laporan
-
+    - [x] table akun -> delete -> tambah
+    - [x] laporan -> verifikasi -> hapus
+- [ ] Tanggapan
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,7 +117,7 @@ Untuk menggunakan
 <!-- CONTACT -->
 ## Contact
 
-Instagram - [@sandimlnfzn_](https://instagram.com/sandikrxyzn) - sandikrxyzn@example.com
+Instagram - [@24hoursofsandi](https://instagram.com/24hoursofsandi) - sandikrxyzn@gmail.com
 
 Project Link: [https://github.com/sandikrxyzn/project-pengaduan/](https://github.com/sandikrxyzn/project-pengaduan)
 
@@ -129,9 +127,9 @@ Project Link: [https://github.com/sandikrxyzn/project-pengaduan/](https://github
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Laravel.com]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
-[Laravel-url]: https://laravel.com
+[Laravel-url]: https://php.
 [JQuery.com]: https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://mysql.com 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [product-screenshot]: images/enam.png
