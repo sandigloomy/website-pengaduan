@@ -41,7 +41,7 @@ import sql `  pengaduan_masyarakat.sql ` untuk memulai.
 
 ### Built With
 
-* [![Laravel][Laravel.com]][Laravel-url]
+* [![Laravel][php.net]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
@@ -77,7 +77,7 @@ Untuk memulai
    ```
 4. ubah  `core/db.php`
    ```php
-   $conn = mysqli_connect("<nama_localhost>", "root", "", "pengaduan_masyarakatt");
+   $conn = mysqli_connect("localhost", "root", "", "pengaduan_masyarakatt");
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,15 +86,18 @@ Untuk memulai
 ## Login 
 * masyarakat
  ```php
-   username: sandi.us passwors: us
+   username: sandi.us 
+   passwors: us
  ```
 * admin
  ```php
-   username: admin passwors: admin
+   username: admin 
+   passwors: admin
  ```
 * petugas
  ```php
-   username: petugas passwors: petugas
+   username: petugas 
+   passwors: petugas
  ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +111,10 @@ Untuk memulai
 - [x] admin
     - [x] table akun -> delete -> tambah
     - [x] laporan -> verifikasi -> hapus
-- [ ] Tanggapan
+- [x] Tanggapan
+- [x] Generate Laporan -> pdf
+- [x] Hapus Pengaduan
+- [x] Verivikasi Laporan
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
