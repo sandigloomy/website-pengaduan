@@ -3,13 +3,16 @@
 function tablePengaduan()
 {
     global $conn;
-    $pengaduan = mysqli_query($conn, "SELECT * FROM pengaduan");
+    $sql = "SELECT pengaduan.id_pengaduan, pengaduan.tgl_pengaduan, pengaduan.isi_laporan, pengaduan.foto, pengaduan.status, masyarakat.nik, masyarakat.nama,masyarakat.username, masyarakat.telp
+        FROM pengaduan
+        INNER JOIN masyarakat
+        ON pengaduan.nik = masyarakat.nik";
 
+    $result = mysqli_query($conn, $sql);
 ?>
     <div class="content-wrapper">
         <div class="container-xxl flex-grow-1 container-p-y">
             <?php
-
             if (isset($_POST['verifikasiLaporan'])) {
                 if (verifikasiLaporan($_POST) > 0) {
                     echo "<div class='alert alert-secondary alert-dismissible' role='alert'>
@@ -23,34 +26,41 @@ function tablePengaduan()
                     </script>";
                 }
             }
-
             ?>
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Home /</span> Pengaduan
-        </h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Home /</span> Pengaduan
+            </h4>
+            <?php if($_SESSION['level'] == "admin"): ?>
+            <a href="?us=pdf" class="btn text-primary bx bx-printer"> Cetak</a>
+            <?php endif ?>
             <div class="card">
                 <!-- <h5 class="card-header">Daftar Pengaduan</h5> -->
                 <div class="table-responsive text-nowrap">
                     <!-- sear -->
                     <div class="navbar-nav">
-                        <?php if(isset($_POST['cari'])) {
-                                $pengaduan = cariPengaduan($_POST['keyword']); 
-                                } ?>
+                        <?php if (isset($_POST['cari'])) {
+                            $pengaduan = cariPengaduan($_POST['keyword']);
+                        } ?>
                         <div class="nav-item d-flex align-items-center card-header">
-                        <i class="bx bx-search fs-4 lh-0"></i>
+                            <i class="bx bx-search fs-4 lh-0"></i>
                             <form action="" method="post">
                                 <input type="text" name="keyword" class="form-control border-0 shadow-none" placeholder="Cariii..." aria-label="Search..." id="keyword" autocomplete="off" />
                                 <button type="submit" name="cari" hidden>search</button>
                             </form>
                         </div>
                     </div>
+                    <!-- <form action="" method="post">
+                        <input type="submit" name="pdf" value="Download PDf" >
+                    </form> -->
                     <!-- search -->
                     <table class="table">
                         <caption class="ms-4">
-                            List of Accounts
+                            List Pengaduan
                         </caption>
+                        
                         <thead>
                             <tr>
                                 <th>Nik</th>
+                                <th>Nama</th>
                                 <th>Tanggal</th>
                                 <th>Bukti</th>
                                 <th>Foto</th>
@@ -60,12 +70,12 @@ function tablePengaduan()
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($pengaduan as $row) : ?>
+                            <?php while ($row = mysqli_fetch_assoc($result)) : ?>
 
                                 <tr>
                                     <!-- <td></td>s -->
-                                    <td><i class="fab fa-angular fa-lg text-danger"></i> <strong><?= $row['nik'];
-                                                                                                    ?></td>
+                                    <td><?= $row['nik'] ?></td>
+                                    <td><i class="fab fa-angular fa-lg text-danger"></i> <strong><?= $row['nama']; ?></td>
                                     <td><?= $row['tgl_pengaduan']; ?></td>
                                     <td class="me-3">
                                         <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
@@ -95,8 +105,6 @@ function tablePengaduan()
                                                 Laporan</strong>
                                         </button>
                                     </td>
-
-
                                     <!-- Awal Modal verifikasi & laporan -->
                                     <form action="" method="post">
                                         <div class="modal" id="modalScrollable<?= $row['id_pengaduan'] ?>" tabindex="-1" aria-hidden="true">
@@ -122,7 +130,6 @@ function tablePengaduan()
                                                                 <option value="selesai" name="status[]">Selesai</option>
                                                             </select>
                                                         </div>
-
                                                         <div>
                                                             <label for="exampleFormControlTextarea1" class="form-label">Laporan</label>
                                                             <textarea class="form-control-plaintext" id="exampleFormControlTextarea1" rows="3" placeholder="<?= $row['isi_laporan'] ?>" readonly></textarea>
@@ -140,21 +147,17 @@ function tablePengaduan()
                                             </div>
                                     </form>
                                     <!-- akhir Modal Verifikasi & Laporan -->
-
                                     <td>
-                                        <a class="text-primary" href="hapus.php?table=pengaduan&id=<?php echo $row['id_pengaduan']; ?>"><i class="bx bx-trash me-1"></i> Delete</a>
+                                        <a class="text-primary" href="hapus.php?table=pengaduan&key=id_pengaduan&id=<?php echo $row['id_pengaduan']; ?>"><i class="bx bx-trash me-1"></i> Delete</a>
                                     </td>
                                     <td>
-                                        <a class="text-primary" href="?us=tanggapan"><i class="bx bx-mail-send me-1"></i>
+                                        <a class="text-primary" href="?us=tanggapan&id_pengaduan=<?= $row['id_pengaduan'] ?>"><i class="bx bx-mail-send me-1"></i>
                                             Tanggapi</a>
                                     </td>
                                 </tr>
-                            <?php endforeach; ?>
-
+                            <?php endwhile; ?>
                         </tbody>
                     </table>
-
-
                 </div>
             </div>
         </div>
