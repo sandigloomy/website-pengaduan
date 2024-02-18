@@ -13,7 +13,7 @@
   <h3 align="center">Pengaduan Masyarakat</h3>
 
   <p align="center">
-    Website Pengaduan Masyarakat php native
+    Our project focuses on the creation of a community complaint website utilizing a straightforward PHP routing system. This platform serves as a central hub for individuals to voice their grievances, report issues, and seek assistance from relevant authorities or community members. By harnessing the power of PHP routing, we aim to streamline the process of handling and addressing citizen complaints, fostering a more responsive and supportive community environment.
   </p>
 </div>
 
