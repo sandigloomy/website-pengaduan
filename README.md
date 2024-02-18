@@ -13,7 +13,7 @@
   <h3 align="center">Pengaduan Masyarakat</h3>
 
   <p align="center">
-    Our project focuses on the creation of a community complaint website utilizing a straightforward PHP routing system. This platform serves as a central hub for individuals to voice their grievances, report issues, and seek assistance from relevant authorities or community members. By harnessing the power of PHP routing, we aim to streamline the process of handling and addressing citizen complaints, fostering a more responsive and supportive community environment.
+     Situs Pengaduan Masyarakat adalah proyek yang dikembangkan secara mandiri, memanfaatkan sistem routing PHP sederhana untuk memfasilitasi keterlibatan masyarakat dan pelaporan keluhan. Platform ini berfungsi sebagai saluran penting bagi anggota komunitas untuk menyuarakan keprihatinan, melaporkan masalah, dan berkolaborasi menuju solusi. Dibangun dari awal dengan perutean PHP sebagai intinya, situs web ini menawarkan pendekatan yang efisien untuk menangani keluhan dan memastikan penyelesaian tepat waktu.
   </p>
 </div>
 
